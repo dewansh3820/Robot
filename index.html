@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+<script
+src="https://aframe.io/releases/1.0.4/aframe.min.js">
+</script>
+
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-entity position = "0 1 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Body-->
+        <a-sphere position = "0 0 0" radius = "4" color = "#2193D2"></a-sphere>
+      
+        <a-sphere position = "0 4.4 1.1" radius = "4.5" color = "#2193D2" ></a-sphere>
+    
+
+        
+        <!--Collar-->
+        <a-box position="-0.1 1.7 6" depth = "0.1" height = "0.3" width = "4.6" color="red" rotation = "0 0 0"> </a-box>
+
+        <!--Legs-->
+        <a-cylinder position="-1.9 -3 1.2" radius="1.5" height="3" color="#2193D2" ></a-cylinder>
+
+        <a-cylinder position="1.9 -3 1.2" radius="1.5" height="3" color="#2193D2" ></a-cylinder>
+        
+        <!-- ? -->
+        <a-circle position = "0 0.4 4.2" radius = "2.3" color = "white" ></a-circle>
+
+        <a-plane position = "0 0.7 4.6"  width = "3.8" height = "1.6"color = "white" ></a-plane>
+
+        <a-circle position = "0 0.167 4.2" radius = "1.7" color = "black" ></a-circle>
+        
+        <a-circle position = "0 0.3 4.3" radius = "1.7" color = "white" ></a-circle>
+
+        <a-plane position = "0 -0.1 4.6"  width = "3.2" height = "0.1" color = "black" ></a-plane>
+
+        <!--Sky-->
+                   
+        <a-sky src = "sky.jpg"></a-sky>
+                    
+        <!--Face-->
+
+        <a-circle position = "0 3.6 5.6" radius = "2.8" color = "white" ></a-circle>
+
+        <!--Eyes-->
+
+        <a-circle position = "0.6 6.15 5.7" radius = "0.6"></a-circle>
+
+        <a-circle position = "0.6 6.15 5.69" radius = "0.609" color = "black" ></a-circle>
+
+        <a-circle position = "-0.6 6.15 5.7" radius = "0.6"></a-circle>
+
+        <a-circle position = "-0.6 6.15 5.69" radius = "0.609" color = "black" ></a-circle>
+
+
+        <a-circle position = "-0.6 6.3 6.71" radius = "0.134" color = "black" 
+        animation = "property:position; from: -0.6 6.3 5.71; to: -0.6 6 5.71; dir: alternate; loop:true; " ></a-circle>
+
+        <a-circle position = "0.6 6.3 6.71" radius = "0.134" color = "black" 
+        animation = "property:position; from: 0.6 6.3 5.71; to:  0.6 6 5.71; dir: alternate; loop:true; "></a-circle>
+
+
+        <a-circle position = "0.62 6.32 6.71" radius = "0.03" color = "white"
+        animation = "property:position; from: 0.62 6.32 5.71; to: 0.62 6.02 5.71; dir: alternate; loop: true;" ></a-circle>
+
+        <a-circle position = "-0.56 6.32 6.71" radius = "0.03" color = "white" 
+        animation = "property:position; from: -0.56 6.32 5.71; to: -0.56 6.02 5.71; dir: alternate; loop: true;"></a-circle>
+
+        <!--Nose-->
+
+        <a-circle position = "0 5.53 6.3" radius = "0.35" color = "red"></a-circle>
+
+        <a-circle position = "-0.1 5.66 6.3" radius = "0.1" color = "white"></a-circle>
+
+      
+
+        <!--Bell-->
+
+        <a-circle position = "0 1.4 6.2" radius = "0.4" color = "#ECA71E"></a-circle>
+
+        <a-circle position = "0 1.39 6.1" radius = "0.43" color = "black"></a-circle>
+
+        <a-plane position = "0 1.4 6.4" height = " 0.13" width = " 0.8" color = "#ECA700"></a-plane>
+
+        <a-plane position = "0 1.39 6.3" height = " 0.18" width = " 0.85" color = "black" ></a-plane>
+
+        <!-- Moustache -->
+
+        <a-entity line = "start: -1.9 5.35 6.5; end: -0.5 4.8 6.5; color: black;" ></a-entity>
+
+        <a-entity line = "start: -2.2 4.4 6.5; end: -0.5 4.4 6.5; color: black;" ></a-entity>
+
+        <a-entity line = "start: -2 3.6 6.5; end: -0.5 4 6.5; color: black;" ></a-entity>
+
+
+        <a-entity line = "start: 1.9 5.35 6.5; end: 0.5 4.8 6.5; color: black;" ></a-entity>
+
+        <a-entity line = "start: 2.2 4.4 6.5; end: 0.5 4.4 6.5; color: black;" ></a-entity>
+
+        <a-entity line = "start: 2 3.6 6.5; end: 0.5 4 6.5; color: black;" ></a-entity>
+ 
+      
+       <!-- Mouth -->
+
+
+        
+        <a-entity line = "start: -1.7 3.5 7; end: 1.7 3.5 7; color: black;" ></a-entity>
+
+        <a-circle position = "0 4 5.61" radius = "2" color = "#DB202B" ></a-circle>
+
+        <a-circle position = "0 4 5.6" radius = "2.05" color = "black" ></a-circle>
+
+        <a-plane position = "0 4.45 5.62" height = "1.6" width = "4.1" color = "white" ></a-plane>
+
+        <a-plane position = "0 5 5.62" height = "1.3" width = "3.2" color = "white" ></a-plane>
+
+        <a-plane position = "0 5.3 5.62" height = "1" width = "2.5" color = "white" ></a-plane>
+
+        <a-plane position = "0 4.89 6.2" width = "0.03" height = "2.5" color =  "black" ></a-plane>
+
+        <a-circle position = "0.5 2.05 5.61" radius = "1" color = "#E05262" theta-start = "29" theta-length="100" ></a-circle>
+
+        <a-circle position = "-0.5 2.05 5.61" radius = "1" color = "#E05262" theta-start = "0" theta-length="155" ></a-circle>
+
+      <!-- Hands -->
+
+      <a-cylinder position="4.2 1.4 2" radius="0.7" height="3" color="#2193D2" rotation = "0 0 130" ></a-cylinder>
+      
+      <a-sphere position = "5.5 2.5 2" radius="0.85" color="white" ></a-sphere>
+        
+      <a-cylinder position="-3.6 -0.3 2" radius="0.7" height="3" color="#2193D2" rotation = "0 0 140" ></a-cylinder>
+
+      <a-sphere position = "-5 -2 2" radius="0.85" color="white" ></a-sphere>
+
+      <!--antena-->
+
+
+
+   
+      <a-entity animation ="property:position; from: 0 0.4 0 ; to: 0 -0.4 0; dir: alternate; loop: true;"></a-circle>
+        ><a-sphere position = "3.8 -1.3 1" radius ="0.35" color ="red"></a-sphere></a-entity>
+
+        
+
+    </a-scene>
+</body>
+</html> 
